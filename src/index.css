@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.services{
+  color:rgb(64, 64, 64)
+}
+@media (max-width: 515px) {
+  .portfolio-cards{
+    display: flex;
+   margin: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+.footer{
+  display: flex;
+ flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+   
+  }
+  .getin{
+    display: none;
+  }
+  .getin2{
+    display: grid;
+    justify-items: end;
+    gap: 3px;
+  }
+
+  .nav-content{
+    display: inline;
+
+  }
+  .mqnavic{
+    display: none;
+  }
+}
+.linkdinn:hover{
+  background-color: #0077B5;
+  fill: white;
+}
+.githubb:hover{
+  background-color: #181717;
+  fill: white;
+}
+.twitterr:hover{
+  fill: white;
+  background-color: #1DA1F2;
+}
+.whatsapp:hover{
+  fill: white;
+  background-color: #25D366; 
+}
+@media (max-width: 773px) {
+.mqaboutme{
+padding:0;
+margin: 0;
+font-size: px;
+align-items: center;
+justify-content: space-around;
+/* padding: 100px; */
+}
+.mqhashtags{
+  gap: 2px;
+  padding: 0;
+font-size: 12px;
+padding-top: 10px;
+}
+.mqaboutme{
+font-size: 15x;
+margin: auto;
+}
+.mqtext{
+  font-size: 12px;
+  margin: auto;
+  margin: 0;
+  padding: 0;
+}
+.mqcross{
+  display: none;
+}
+.mqdjimg{
+  height: 100px;
+}
+.mqlogo{
+height: 120px;
+padding: 8px;
+margin: 8px;
+}
+.mqgetin{
+  padding: 8px;
+}
+
+} 
