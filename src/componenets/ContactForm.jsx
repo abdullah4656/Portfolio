@@ -35,13 +35,13 @@ const ContactForm = () => {
   
   return (
     <div>
-      <form ref={form} onSubmit={sendEmail} className="body-font relative">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="font-semibold text-5xl  font-serif title-font mb-4 text-black">
+      <form ref={form} onSubmit={sendEmail} className="  text-white contactcard ">
+        <div className=" px-5 py-24    ">
+          <div className="flex flex-col text-center w-full mb-12  ">
+            <h1 className="font-semibold text-6xl  italic font-serif title-font mb-4 text-white">
               Contact Us
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-black">
+            <p className="lg:w-2/3 mx-auto leading-relaxed  text-2xl text-white ">
               For more Feel free to Contact us 
 
             </p>
@@ -50,7 +50,7 @@ const ContactForm = () => {
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label assName="leading-7 text-sm text-black">
+                  <label className="leading-7 text-xl ">
                     Name
                   </label>
                   <input
@@ -58,14 +58,14 @@ const ContactForm = () => {
                     name="user_name"
                  
                 required
-                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-500 rounded border border-gray-800 focus:border-gray-800 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               
               </div>
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label lassName="leading-7 text-sm text-black">
+                  <label className="leading-7 text-xl   ">
                     Email
                     
                   </label>
@@ -76,7 +76,7 @@ const ContactForm = () => {
                    
                 required
                    
-                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-500 rounded border border-gray-800 focus:border-gray-800 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -84,7 +84,7 @@ const ContactForm = () => {
               <div className="p-2 w-full">
              
                 <div className="relative">
-                  <label  className="leading-7 text-sm text-black">
+                  <label  className="leading-7 text-xl text-white ">
                     Message
                     
                   </label>
@@ -93,14 +93,14 @@ const ContactForm = () => {
                     name="message"
                  
                 
-                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-500 rounded border border-gray-500 focus:border-gray-800 h-56 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
               <div className="p-2 w-full">
                 <button
                  type='submit'
-                  className="focus:ring-2 focus:ring-indigo-600 transition-transform duration-300 hover:scale-105 focus:outline-none flex items-center gap-4  font-sans mx-auto text-white bg-indigo-500 border-0 py-2 px-12  hover:bg-indigo-600 rounded text-lg">
+                  className="focus:ring-2 transition-transform duration-300 hover:scale-105 focus:outline-none flex items-center gap-4  font-sans mx-auto text-white getin border-0 py-2 px-12   rounded text-lg">
              { loading ? (<><FontAwesomeIcon icon={faSpinner} spinPulse /></>):(<FontAwesomeIcon icon={faPaperPlane}  />)}  {loading ? 'Sending...' : 'Send'}
                 </button>
                 
@@ -114,6 +114,7 @@ const ContactForm = () => {
           </div>
         </div>
       </form>
+      <hr />
     </div>
   );
 };

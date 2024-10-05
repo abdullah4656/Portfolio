@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Services = () => {
   return (
-    <div className='services-container p-8 z-0 ' >
-      <h1 className='text-5xl font-bold mb-6 font-serif '>Services</h1>
-      <div className='service-card bg-slate-50 card  cursor-pointer p-6 rounded-lg shadow-2xl'>
+    <div className='text-white  p-8 z-0 ' >
+      <h1 className='text-6xl font-bold mb-6 font-serif items-center justify-center flex italic'>Services</h1>
+      <div className='card bg-gray-800 cursor-pointer p-6 rounded-lg shadow-2xl'>
         <div className='icon mb-4'>
           <FontAwesomeIcon icon={faGlobe}  className='text-2xl ' />
         </div>

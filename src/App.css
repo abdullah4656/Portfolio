@@ -9,6 +9,9 @@ body{
 .App {
   position: relative;
 }
+.phone{
+  fill: white;
+}
 
 button {
   margin: 20px;
@@ -57,13 +60,28 @@ bottom: -130px;
   text-align: center;
 }
 /* Portfolio.css */
-
+.contactcard{
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.25);
+    /* width: 80%; */
+}
 .card {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.25);
+  color: white;
+  
+}
+.card:hover{
+  box-shadow: none;
 }
 
 .card:hover {
   transform: translateY(-10px); /* Adjust this value as needed */
-  background-color: #4f46e5; /* Tailwind's indigo-700 */
-  color: #f8fafc; /* Tailwind's slate-50 */
+  background-color: orange; /* Tailwind's indigo-700 */
+  color: black; /* Tailwind's slate-50 */
+}
+.intro{
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
 }

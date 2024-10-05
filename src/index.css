@@ -4,9 +4,28 @@
 
 
 
-
+.phone{
+  fill: orange;
+}
 .services{
   color:rgb(64, 64, 64)
+}
+.mqlogo{
+  display: none;
+}
+@media (max-width:1350px) 
+{
+.cross{
+  display: none;}
+  .aimg{
+display: none;
+  }
+
+}
+@media (max-width: 698px){
+  .mainimg{
+    display: none;
+  }
 }
 @media (max-width: 515px) {
   .portfolio-cards{
@@ -16,6 +35,7 @@
     align-items: center;
     flex-direction: column;
   }
+ 
   
 .footer{
   display: flex;
@@ -25,14 +45,15 @@
   align-items: center;
    
   }
-  .getin{
+  
+  .logo{
     display: none;
   }
-  .getin2{
-    display: grid;
-    justify-items: end;
-    gap: 3px;
+  
+  .mqlogo{
+    display: block;
   }
+  
 
   .nav-content{
     display: inline;
@@ -42,17 +63,29 @@
     display: none;
   }
 }
+.linkdinn{
+  fill: orange;
+}
+.githubb{
+  fill: orange;
+}
+.twitterr{
+  fill: orange;
+}
+.whatsapp{
+  fill: orange;
+}
 .linkdinn:hover{
   background-color: #0077B5;
   fill: white;
 }
 .githubb:hover{
-  background-color: #181717;
+  background-color:#181717;
   fill: white;
 }
 .twitterr:hover{
   fill: white;
-  background-color: #1DA1F2;
+  background-color:  #181717;
 }
 .whatsapp:hover{
   fill: white;
@@ -89,13 +122,75 @@ margin: auto;
 .mqdjimg{
   height: 100px;
 }
-.mqlogo{
-height: 120px;
-padding: 8px;
-margin: 8px;
-}
+
 .mqgetin{
   padding: 8px;
 }
 
 } 
+.stylish-regular {
+  font-family: "Stylish", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.abt{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+/* flex-direction: column; */
+}
+.abt:hover{
+  display: flex;
+  gap: 15px;
+}
+.logo{
+  font-family: "Audiowide", sans-serif;
+  color: orange;
+  font: 24px;
+}
+.getin{
+  background-color: rgb(221, 149, 16);
+  color: black;
+}
+.getin:hover{
+  background-color: orange;
+  
+}
+.introcont{
+  display: flex;
+  align-items: center;
+justify-content: space-evenly;
+gap: 100px;
+
+
+}
+.container{
+  
+height: 80vh;
+margin: auto;
+z-index: 10;
+background-color:  darkslategray;
+color: white;
+width: 80%;
+border-radius: 10px;
+box-shadow: 5px 5px 5px 5px rgba(38, 38, 38, 0.25);
+
+}
+.cross{
+  fill:white;
+  cursor: pointer;
+
+}
+.cross:hover{
+  fill: black;
+}
+.typeWriterText{
+  color: orange;
+  font-size: 30px;
+font-style:oblique;
+font-family: '''Times New Roman', Times, serif;
+}
+.text-orange{
+  color: orange;
+  
+}

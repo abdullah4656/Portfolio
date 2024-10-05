@@ -8,11 +8,13 @@ import Aboutme from './componenets/Aboutme';
 import ContactForm from './componenets/ContactForm';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useRef } from 'react';
-
+import Prc from './componenets/prc';
+// import Matter from './componenets/Matter';
 function App() {
   const contactFormRef = useRef(null);
   return (
     <>
+    <div className='bg-black'>
       <Router basename={import.meta.env.BASE_URL}>
         <Navbar contactFormRef={contactFormRef} />
         <Into />
@@ -27,7 +29,9 @@ function App() {
         </div>
         
         <Footer />
+      <Prc/>
       </Router>
+      </div>
     </>
   );
 }
